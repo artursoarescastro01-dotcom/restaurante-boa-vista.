@@ -34,3 +34,14 @@ const io = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Status aberto/fechado (horário de São Paulo)
+(() => {
+  const el = document.getElementById('status'), txt = document.getElementById('statusText');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+  const d = now.getDay(), h = now.getHours() + now.getMinutes() / 60;
+  const close = d >= 1 && d <= 5 ? 22 : d === 6 ? 17 : 0;
+  const open = close && h >= 6 && h < close;
+  el.classList.add(open ? 'is-open' : 'is-closed');
+  txt.textContent = open ? `Aberto até ${close}h` : 'Fechado agora';
+})();

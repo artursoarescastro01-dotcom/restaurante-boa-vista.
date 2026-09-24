@@ -16,14 +16,18 @@
 <body>
 
   <header class="nav" id="nav">
-    <div class="container nav__inner">
-      <a href="#inicio" class="logo">Boa <span>Vista</span></a>
+    <div class="nav__bar">
+      <a href="#inicio" class="logo" aria-label="Restaurante Boa Vista">
+        <svg class="logo__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M7 3v7a2 2 0 0 0 2 2v9M11 3v7a2 2 0 0 1-2 2M7 3v7M17 3c-2 2-3 4.5-3 7 0 1.5 1 2 3 2v9"/></svg>
+        <span>Boa <em>Vista</em></span>
+      </a>
       <nav class="nav__links" id="navLinks">
         <a href="#sobre">Sobre</a>
         <a href="#cardapio">Cardápio</a>
         <a href="#galeria">Galeria</a>
         <a href="#contato">Contato</a>
-        <a href="#contato" class="btn btn--small">Reservar</a>
+        <span class="status" id="status"><i></i><b id="statusText">Horários</b></span>
+        <a href="https://wa.me/5511943902926" target="_blank" rel="noopener" class="nav__cta">Reservar</a>
       </nav>
       <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
     </div>
