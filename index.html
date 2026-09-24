@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurante Boa Vista | Sabor e tradição</title>
+  <meta name="description" content="Restaurante Boa Vista: pratos preparados com ingredientes frescos, ambiente acolhedor e atendimento de excelência. Veja o cardápio, horários e como chegar.">
+  <meta property="og:title" content="Restaurante Boa Vista">
+  <meta property="og:description" content="Sabor, tradição e um ambiente feito para você voltar sempre.">
+  <meta property="og:type" content="restaurant">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="logo">Boa <span>Vista</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn btn--small">Reservar</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Restaurante</p>
+        <h1>Sabor que traz<br>você de volta</h1>
+        <p class="hero__text">Ingredientes frescos, receitas com identidade e um ambiente acolhedor para almoços, jantares e momentos especiais.</p>
+        <div class="hero__actions">
+          <a href="#cardapio" class="btn">Ver cardápio</a>
+          <a href="MAPS_LINK" class="btn btn--ghost" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll" aria-label="Rolar para baixo"></a>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__grid">
+        <div><strong>Seg–Sáb</strong><span>Portas abertas na semana</span></div>
+        <div><strong>22h</strong><span>Funcionamos até as 22h (seg a sex)</span></div>
+        <div><strong>6h</strong><span>Abrimos cedo, de segunda a sábado</span></div>
+        <div><strong>Todo dia</strong><span>Prato do dia preparado na hora</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about">
+        <div class="about__img reveal" role="img" aria-label="Ambiente do restaurante"><span>Foto do restaurante</span></div>
+        <div class="reveal">
+          <p class="eyebrow eyebrow--dark">Nossa história</p>
+          <h2>Cozinha feita com cuidado, servida com carinho</h2>
+          <p>No Boa Vista, cada prato nasce da combinação entre ingredientes selecionados e receitas preparadas na hora. Nosso compromisso é oferecer uma experiência completa: comida saborosa, atendimento atencioso e um ambiente onde você se sente em casa.</p>
+          <p>Seja para o almoço do dia a dia, um encontro em família ou uma comemoração, temos o lugar certo para você.</p>
+          <ul class="ticks">
+            <li>Ambiente climatizado e confortável</li>
+            <li>Opções para todos os gostos</li>
+            <li>Atendimento rápido e cordial</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="cardapio">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--dark">Cardápio</p>
+          <h2>Nossos destaques</h2>
+        </div>
+        <div class="tabs reveal" role="tablist">
+          <button class="tab is-active" data-tab="pratos" role="tab">Pratos</button>
+          <button class="tab" data-tab="petiscos" role="tab">Petiscos</button>
+          <button class="tab" data-tab="sobremesas" role="tab">Sobremesas</button>
+          <button class="tab" data-tab="bebidas" role="tab">Bebidas</button>
+        </div>
+
+        <!-- Edite os itens e preços abaixo -->
+        <div class="menu is-active" id="pratos">
+          <article class="item"><div><h3>Bife com Batata Frita</h3><p>Bife grelhado na hora, acompanhado de batata frita crocante.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Bife Acebolado / Salteado</h3><p>Tiras de carne salteadas, servidas com acompanhamentos.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Ossobuco com Cuscuz</h3><p>Prato do dia: ossobuco macio com cuscuz.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Fish and Chips</h3><p>Peixe empanado com batatas fritas.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Prato com Carne de Porco</h3><p>Suíno preparado na hora, com acompanhamentos.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Club Sandwich</h3><p>Sanduíche clássico, empilhado e bem recheado.</p></div><span>Consulte</span></article>
+        </div>
+        <div class="menu" id="petiscos">
+          <article class="item"><div><h3>Porção de Batata Frita</h3><p>Crocante, ideal para acompanhar a cerveja.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Petisco de Porco</h3><p>Pedaços de suíno preparados na hora.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Isca de Peixe</h3><p>Empanada, servida com batatas.</p></div><span>Consulte</span></article>
+        </div>
+        <div class="menu" id="sobremesas">
+          <article class="item"><div><h3>Bolo de Chocolate</h3><p>Fatia generosa, feita para fechar bem a refeição.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Sobremesa do Dia</h3><p>Pergunte ao garçom as opções de hoje.</p></div><span>Consulte</span></article>
+        </div>
+        <div class="menu" id="bebidas">
+          <article class="item"><div><h3>Drinks e Coquetéis</h3><p>Preparados na hora, incluindo opções com pepino.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Cervejas Geladas</h3><p>Garrafas bem geladas.</p></div><span>Consulte</span></article>
+          <article class="item"><div><h3>Chás e Refrescos</h3><p>Opções para acompanhar a refeição.</p></div><span>Consulte</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--dark">Galeria</p>
+          <h2>Um pouco do nosso dia a dia</h2>
+        </div>
+        <div class="gallery reveal">
+          <div class="g g--1"><span>Foto 1</span></div>
+          <div class="g g--2"><span>Foto 2</span></div>
+          <div class="g g--3"><span>Foto 3</span></div>
+          <div class="g g--4"><span>Foto 4</span></div>
+          <div class="g g--5"><span>Foto 5</span></div>
+        </div>
+        <p class="center reveal"><a href="https://www.instagram.com/restboavista" target="_blank" rel="noopener" class="btn btn--outline">Ver mais no Instagram @restboavista</a></p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container reveal">
+        <h2>Venha almoçar ou jantar com a gente</h2>
+        <p>Faça sua reserva ou peça informações pelo WhatsApp ou Instagram.</p>
+        <a href="https://wa.me/5511943902926" target="_blank" rel="noopener" class="btn">Chamar no WhatsApp</a>
+        <a href="https://www.instagram.com/restboavista" target="_blank" rel="noopener" class="btn btn--ghost">Instagram</a>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container contact">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--dark">Contato</p>
+          <h2>Onde estamos</h2>
+          <ul class="info">
+            <li><b>Endereço</b><span>Rua Exemplo, 000 – Bairro, Cidade/UF</span></li>
+            <li><b>Horário</b><span>Segunda a Sexta: 6h às 22h<br>Sábado: 6h às 17h<br>Domingo: fechado</span></li>
+            <li><b>WhatsApp</b><span><a href="https://wa.me/5511943902926" target="_blank" rel="noopener">(11) 94390-2926</a></span></li>
+            <li><b>Telefone</b><span><a href="tel:+551155215707">(11) 5521-5707</a></span></li>
+            <li><b>Instagram</b><span><a href="https://www.instagram.com/restboavista" target="_blank" rel="noopener">@restboavista</a></span></li>
+          </ul>
+          <a href="MAPS_LINK" class="btn" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        <a href="https://wa.me/5511943902926" class="btn btn--outline" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="map reveal">
+          <!-- Após colar o link do Maps, troque o src pela URL de "Incorporar um mapa" -->
+          <iframe title="Localização do restaurante" src="https://www.google.com/maps?q=Restaurante+Boa+Vista&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo">Boa <span>Vista</span></a>
+      <p>© <span id="year"></span> Restaurante Boa Vista. Todos os direitos reservados.</p>
+      <a href="https://www.instagram.com/restboavista" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
